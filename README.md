@@ -74,7 +74,9 @@ I used the models I was familiar with and which I think is most effective, Incep
 
 The technical notebook is named [waste_classification](waste_classification.ipynb) which is recommended for viewing purposes only.
 
-The play-around editable notebook [Image_Classification](image_classification.ipynb) is where users can input images to check how the models will classify it. The .h5 files are the save pre-trained models defined respectively in the notebook to allevaite confuion to which model is which.
+The play-around editable notebook [Image_Classification](image_classification.ipynb) is where users can input images to check how the models will classify it. 
+
+The .py file cnn_fxn contains function for the editable notebook. The .h5 files are the save pre-trained models defined respectively in the .py to allevaite confuion to which model is which.
 
 
 
