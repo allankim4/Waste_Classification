@@ -34,6 +34,7 @@ def image_predictor(path):
     pred2 = cnn3.predict(img)
     pred3 = cnn2.predict(img)
     pred4 = cnn3_tl.predict(img)
+
     return pred1, pred2, pred3, pred4
 
 
