@@ -63,6 +63,8 @@ The Images were compiled and then split using sklearn train_test_split module wi
 
 I created two models, 2-layer and 3-layer CNN. The 2-layer CNN was very acceptable but still a bit confused so I decided to create a deeper one. The result for 3-layer was acceptable as well and a bit better than the 2-layer in some aspects but not totally.
 
+The models are also being improved as of current (24-Sept-19). Dropout is being added. Future improvement would be executing Gridsearch for different optimizer and activation functions.
+
 ### Transfer Learning
 
 Transfer Learning was utilized to use pretrained models from Keras.Application.
