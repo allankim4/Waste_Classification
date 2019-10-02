@@ -40,6 +40,14 @@ def image_predictor(path):
 
 def predictor_output(path):
     mod1, mod2, mod3, mod4 = image_predictor(path)
+    predictions = [mod1, mod2, mod3, mod4]
+    for p in predictions:
+        if p > .7:
+            p = 'Organic'
+        elif (p <.7) & (p>.4):
+            p = 'Model unsure'
+        else:
+            p = 'Recyclable'
     print('VALUE Interpretation:')
     print()
     print('Closer to 1 is Organic, Closer to 0 is Recyclable')
