@@ -35,6 +35,7 @@ I used a dedicated Unix PC for Deep Learning with the following specs and Softwa
 PC Specification:
 CPU: Ryzen 2700X: 8-core, 16-threads
 GPU: GTX 1080: 8GB VRAM
+(UPDATE 26-Sep-19)GPU: GTX 1080ti 11GB VRAM
 RAM: 64GB RAM
 SSD: 1TB M.2 SSD
 
