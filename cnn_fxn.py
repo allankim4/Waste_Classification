@@ -37,29 +37,33 @@ def image_predictor(path):
 
     return pred1, pred2, pred3, pred4
 
+def prediction_label(p):
+    if p > .7:
+        p = 'Organic'
+    elif (p <.7) & (p>.4):
+        p = 'Model unsure'
+    else:
+        p = 'Recyclable'
+    return p
+
 
 def predictor_output(path):
     mod1, mod2, mod3, mod4 = image_predictor(path)
     predictions = [mod1, mod2, mod3, mod4]
-    for p in predictions:
-        if p > .7:
-            p = 'Organic'
-        elif (p <.7) & (p>.4):
-            p = 'Model unsure'
-        else:
-            p = 'Recyclable'
+    labels = [pred1, pred2, pred3, pred4]
+
     print('VALUE Interpretation:')
     print()
     print('Closer to 1 is Organic, Closer to 0 is Recyclable')
     print()
     print('2-LAYER CNN:')
-    print(mod1)
+    print(prediction_label(pred1))
     print()
     print('3-Layer CNN:')
-    print(mod2)
+    print(prediction_label(pred2))
     print()
     print('Inception ver3 CNN')
-    print(mod3)
+    print(prediction_label(pred3))
     print()
     print('Xception CNN')
-    print(mod4)
+    print(prediction_label(pred4))
