@@ -66,11 +66,15 @@ I created two models, 2-layer and 3-layer CNN. The 2-layer CNN was very acceptab
 
 The models are also being improved as of current (24-Sept-19). Dropout is being added. Future improvement would be executing Gridsearch for different optimizer and activation functions.
 
+The model prediction ouputs 'Recyclable' , 'Organic', and 'Model Unsure'(for probabilities not high enough to be organic and low enough to recyclable).
+
 ### Transfer Learning
 
 Transfer Learning was utilized to use pretrained models from Keras.Application.
 
 I used the models I was familiar with and which I think is most effective, InceptionV3 and Xception.
+
+Further transfer learnings will be explored to include other techniques such as feature engineering, and model improvement.
 
 
 ## Summary of Files
