@@ -7,6 +7,10 @@
 The goal of this project is to perform Image Classification on two general types of waste, organic and recyclable.
 (Images were retreived from kaggle) 
 
+## How To's
+
+Making a classification/prediction: Just run the Image_Classification.ipynb. Search for a jpeg/jpg file to classify on the internet and paste the URL of the image on the respective cell. You can also just save the image and paste path for the image.
+
 ## Contents
 
 - [Introduction](#Introduction)
