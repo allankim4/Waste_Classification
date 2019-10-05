@@ -7,6 +7,16 @@
 The goal of this project is to perform Image Classification on two general types of waste, organic and recyclable.
 (Images were retreived from kaggle) 
 
+## How To's
+
+### Training the CNN Model
+
+Run the Waste_Classification.ipynb. But be aware that running the notebook without a GPU and small RAM would result in an error or long time to train. Comment or uncomment the portions for saving the trained model as needed. You only need to save the model once. Every re-run of the model will yield the same model due to the seed I provided on the model.
+
+### Predicting an Image
+
+Making a classification/prediction: Just run the Image_Classification.ipynb. Search for a jpeg/jpg file to classify on the internet and paste the URL of the image on the respective cell. You can also just save the image and paste path for the image.
+
 ## Contents
 
 - [Introduction](#Introduction)
@@ -66,11 +76,15 @@ I created two models, 2-layer and 3-layer CNN. The 2-layer CNN was very acceptab
 
 The models are also being improved as of current (24-Sept-19). Dropout is being added. Future improvement would be executing Gridsearch for different optimizer and activation functions.
 
+The model prediction ouputs 'Recyclable' , 'Organic', and 'Model Unsure'(for probabilities not high enough to be organic and low enough to recyclable).
+
 ### Transfer Learning
 
 Transfer Learning was utilized to use pretrained models from Keras.Application.
 
 I used the models I was familiar with and which I think is most effective, InceptionV3 and Xception.
+
+Further transfer learnings will be explored to include other techniques such as feature engineering, and model improvement.
 
 
 ## Summary of Files
