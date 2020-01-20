@@ -50,7 +50,7 @@ RAM: 64GB RAM
 SSD: 1TB M.2 SSD
 
 Software Required:
-Tensorflow-GPU
+Tensorflow-GPU (older version, haven't tried TF 2 yet 8 Nov 19)
 (NVIDIA hardware only):
   Cuda-10.0 - please ensure it is indeed CUDA 10.0 and not 10.1. Otherwise, tensorflow-gpu wont work and will use CPU for     training the model
   CuDNN7
